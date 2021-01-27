@@ -1,0 +1,92 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* colors */
+:root{
+    --darkCyan: hsl(185, 75%, 39%);
+    --vddblue: hsl(229, 23%, 23%);
+    --darkGrayishBlue: hsl(227, 10%, 46%);
+    --darkGray: hsl(0, 0%, 59%);
+    font-size: 18px;
+}
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body{
+    color: var(--vddblue);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* section */
+section{
+    background-color: var(--darkCyan);
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border-radius: 1rem;
+    width: 375px;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card-body{
+    padding: 0 20px 30px;
+}
+
+.card-header{
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 150px;
+}
+
+.img-holder{
+    border-radius: 49%;
+    margin: -50px auto 30px auto;
+    border: 5px solid white;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+}
+
+.image-holder img{
+    display: block;
+    width: 100%;
+    height: auto;
+    background-image: cover;
+}
+
+
+
+
+
+
+
+
+
+.attribution {
+     font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+ */
