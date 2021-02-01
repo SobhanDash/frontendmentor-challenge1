@@ -27,22 +27,20 @@ body{
 section{
     background-color: var(--darkCyan);
     height: 100vh;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .card{
-    border-radius: 1rem;
-    width: 375px;
+    width: 370px;
+    border-radius: 20px;
     background-color: white;
-    text-align: center;
     overflow: hidden;
-}
-
-.card-body{
-    padding: 0 20px 30px;
+    text-align: center;
+    position: relative;
 }
 
 .card-header{
@@ -51,32 +49,94 @@ section{
     height: 150px;
 }
 
+.card-body{
+    padding: 0 20px 25px;
+}
+
+
 .img-holder{
-    border-radius: 49%;
-    margin: -50px auto 30px auto;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%; 
     border: 5px solid white;
     overflow: hidden;
-    width: 100px;
-    height: 100px;
+    margin: -55px auto 30px auto;
 }
 
 .image-holder img{
-    display: block;
     width: 100%;
     height: auto;
-    background-image: cover;
+    display: block;
+}
+
+.age, .city, .meta{
+    color: var(--darkGray);
+    font-weight: 400;
+}
+
+.name-age{
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.age{
+    font-weight: 400;
+    padding: 0.2rem 0.4rem 0;
+}
+
+.city{
+    font-size: 0.7rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-top: 12px;
 }
 
 
+.card-footer{
+    border-top: 1px solid hsl(0, 4%, 88%);
+    display: flex;
+    padding: 0 2rem 0 2rem;
+}
 
+.card-footer .item{
+    display: flex;
+    flex: 1;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.card-footer .item .value{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
 
+.card-footer .item .meta{
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+}
 
+/* Graphics(circles) */
+.circles .c1, .circles .c2{
+    position: absolute;
+}
 
+.circles .c1{
+    top: -505px;
+    left: -250px;
+}
 
+.circles .c2{
+    bottom: -635px;
+    right: -217px;
+}
 
 .attribution {
-     font-size: 11px; text-align: center; 
+    font-size: 11px; 
+    text-align: center; 
 }
 
 .attribution a { 
